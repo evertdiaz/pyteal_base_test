@@ -13,9 +13,7 @@ export PATH=/opt/homebrew/sbin:$PATH
 `brew install node`
 
 ## Instalar sandbox
-`git clone https://github.com/algorand/sandbox`
-`./sandbox up`
-`./sandbox enter algod`
+`git clone https://github.com/algorand/sandbox.git`
 
 ## Agregar tus archivos al sandbox, debajo de ports
 ```
@@ -24,3 +22,8 @@ volumes:
   source: ../
   target: /data
 ```
+
+## Levantar el sandbox
+`./sandbox up -v`
+`./sandbox enter algod`
+

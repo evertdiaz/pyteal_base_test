@@ -1,10 +1,6 @@
 from pyteal import *
 from pyteal.ast.bytes import Bytes
 
-# Declare application state storage (immutable)
-global_registrar = Bytes("registrar")
-local_diploma = Bytes("diploma")
-
 def approval():
   return Return(Int(1))
   
